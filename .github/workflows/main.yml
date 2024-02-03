@@ -32,8 +32,7 @@ jobs:
         ECR_REPOSITORY: ecr_assignment1
         IMAGE_TAG: v0.1
       run: |
-        cd Chapter02/kubia/
-        ls -ltra
+        cd 
         # Docker build command
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         # Unit test
